@@ -1,6 +1,9 @@
 @use '../abstracts/variables' as vars;
 
 .signIn {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   &_container {
     width: 343px;
     margin: 0 auto;
