@@ -1,24 +1,19 @@
 @use '../abstracts/variables' as vars;
 
-.signIn {
+.signIn{
 
-  &_container {
+  &_container{
     width: 343px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-
-    .wrapper_bottom {
-      margin-top: auto;
-    }
+    height: 100%;
   }
-
-  &_back {
+  &_back{
     padding-top: 20px;
   }
-
   &_text {
+
     &_title {
       color: vars.$gray2;
       font-size: 26px;
@@ -58,6 +53,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+
     }
 
     &_label {
@@ -71,6 +67,7 @@
     }
 
     &_btn {
+
       padding: 10px;
       align-items: center;
       gap: 10px;
@@ -83,6 +80,7 @@
     &_error {
       color: #AC3131;
       font-size: 12px;
+
     }
   }
 
@@ -93,8 +91,7 @@
     z-index: 10;
     user-select: none;
 
-    &::before,
-    &::after {
+    &:before, &:after {
       position: absolute;
       content: '';
       height: 1px;
@@ -103,13 +100,15 @@
       top: 12px;
     }
 
-    &::before {
+    &:before {
       left: 0;
     }
 
-    &::after {
+    &:after {
       right: 0;
     }
+
+
   }
 
   &_logBox {
@@ -145,3 +144,4 @@
     }
   }
 }
+
