@@ -4,13 +4,13 @@
 min-height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   &_container{
     width: 343px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     height: 100%;
+    gap: 70px;
   }
   &_back{
     padding-top: 20px;
