@@ -1,9 +1,12 @@
-.container{
+.container {
   max-width: 343px;
   margin: 0 auto;
 
-}.wrapper_bottom {
-   margin-top: auto;
+}
 
- }
+.wrapper_bottom {
+  position: absolute;
+  content: '';
+  bottom: 0;
+}
 
