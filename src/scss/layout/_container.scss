@@ -3,10 +3,7 @@
   margin: 0 auto;
 
 }.wrapper_bottom {
-   position: absolute;
-   content: '';
-   bottom: 0;
-   width: 343px;
+   flex: 1 1 auto;
    padding-bottom: 30px;
  }
 
