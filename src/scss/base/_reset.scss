@@ -1,0 +1,114 @@
+/* reset.scss */
+/* Modern CSS Reset | 2025-04-27 | Public Domain */
+
+/* 1. Box sizing and remove default margin/padding */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+html,body{
+  height: 100%;
+}
+/* 3. Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 4. Make media elements responsive */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Reset form elements */
+input,
+button,
+textarea,
+select {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+  outline: none;
+}
+
+/* 6. HTML5 semantic elements */
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* 7. Tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 8. Blockquotes and quotes */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+/* 9. Remove default focus outline (opt-in styling separately) */
+:focus {
+  outline: none;
+}
+
+/* 10. Root defaults */
+:root {
+  scroll-behavior: smooth;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 11. Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 12. Prevent images and videos from inheriting user-select */
+img,
+video {
+  user-select: none;
+}

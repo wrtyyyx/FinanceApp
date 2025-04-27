@@ -1,0 +1,23 @@
+// 1. Абстракции: переменные, миксины, функции
+@use 'abstracts/variables' as *;
+
+
+// 2. Базовые стили: шрифты, сброс и типографика
+@use 'base/fonts';
+@use 'base/reset';
+
+
+// 3. Layout-блоки
+@use 'layout/container';
+@use 'layout/base';   // или лучше назвать layout/grid / layout/header и т.п.
+
+// 4. Компоненты (если они есть)
+// @use 'components/buttons';
+// @use 'components/modal';
+// …
+
+// 5. Стили страниц
+@use 'pages/start';
+@use 'pages/signIn';
+@use 'pages/signUp';
+
